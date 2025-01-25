@@ -21,3 +21,14 @@ Backend: Node.js, Express.js
 Database: MongoDB
 
 Authentication: JWT (JSON Web Tokens)
+
+# Milestone 5 -Adding SignUp Page
+
+1. Created a Sign-Up Page in React.
+2. Implemented form validation for:
+      Name (required)
+      Email (valid format required)
+      Password (minimum 2 characters)
+      Password Confirmation (must match password)
+
+4. Used React Router for navigation.
