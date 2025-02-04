@@ -4,6 +4,7 @@ const ErrorHandler = require("./middleware/error");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const product= require('./controller/product')
 
 
 app.use(express.json());
@@ -17,16 +18,13 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
     require("dotenv").config({
         path: "backend/config/.env",
     });
-}
+};
 
 // import Routes
 const user = require("./controller/user");
-
 app.use("/api/v2/user", user);
-
-// it's for ErrorHandling
+app.use("/api/v2/product", product);
 app.use(ErrorHandler);
-
 module.exports = app;
 
 

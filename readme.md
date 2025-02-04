@@ -71,4 +71,7 @@ Three files were made:
 1)Product.jsx in Components/auth to store info. about product details.
 2)user.js
 3)data/js
-We have createrd a reusable card component with props for product details.
+We have createrd a reusable card component with props for product details.
+
+## Milestone 9: 
+Created an form to input all the details of product and it will be saved in database and will be displayed on products home page.
