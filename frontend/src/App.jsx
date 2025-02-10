@@ -1,21 +1,21 @@
 import React from 'react'
-import { BrowserRouter,Routes,Route } from "react-router-dom"; 
-import { Home , LoginPage, SignupPage, CreateProduct, MyProducts} from "./Routes.jsx"
-import './App.css';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import {LoginPage,SignupPage,Home,CreateProduct, MyProducts} from "./Routes";
+import "./App.css";
 
 const App = () => {
-  return(
+  return (
     <BrowserRouter>
       <Routes>
-        <Route path="/Login" element={<LoginPage/>} />
-        <Route path="/Signup" element={<SignupPage/>} />
-        <Route path="/" element={<Home/>} />
-        <Route path="/Create-product" element={<CreateProduct/>} />
-        <Route path="/my-product" element={<MyProducts/>} />
-        
+        <Route path='/' element={<Home/>}/>
+        <Route path='/login' element={<LoginPage/>}/>
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/create-product/:id" element={<CreateProduct />} />
+        <Route path="/my-products" element={<MyProducts />} />
       </Routes>
     </BrowserRouter>
   )
 }
 
-export default App;
+export default App
