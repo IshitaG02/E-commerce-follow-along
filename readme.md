@@ -297,3 +297,15 @@ In this milestone, we will create a backend endpoint to store user addresses in 
 - Add the received address to the address array inside the user collection.  
 
 This milestone focuses on implementing backend logic to store user addresses efficiently.
+
+### Milestone 23: Select Address & Order Schema  
+
+In this milestone, we will create a select address page in the frontend and define an order schema in the backend.  
+
+#### Key Tasks:  
+- Add a "Place Order" button in the cart to navigate to the select address page.  
+- Display saved addresses and allow selection.  
+- Create a backend endpoint to fetch user addresses.  
+- Define a Mongoose schema for order details.  
+
+This milestone focuses on enabling address selection and order storage.
