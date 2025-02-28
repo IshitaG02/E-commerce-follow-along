@@ -5,7 +5,7 @@ const User = require("../model/user");
 const router = express.Router();
 const { upload } = require("../multer");
 const ErrorHandler = require("../utils/ErrorHandler");
-const catchAsyncErrors = require("../middleware/catchAsyncErrors");
+const catchAsyncErrors = require("../middleware/catchAsyncError");
 // const jwt = require("jsonwebtoken");
 // const sendMail = require("../utils/sendMail");
 const bcrypt = require("bcryptjs");
@@ -92,6 +92,29 @@ router.get("/profile", catchAsyncErrors(async (req, res, next) => {
           phoneNumber: user.phoneNumber,
           avatarUrl: user.avatar.url
       },
+      addresses: user.addresses,
+  });
+}));
+
+router.post("/add-address", catchAsyncErrors(async (req, res, next) => {
+  const { country, city, address1, address2, zipCode, addressType, email } = req.body;
+
+  const user = await User.findOne({ email });
+  if (!user) {
+      return next(new ErrorHandler("User not found", 404));
+  }
+  const newAddress = {
+      country,
+      city,
+      address1,
+      address2,
+      zipCode,
+      addressType,
+  };
+  user.addresses.push(newAddress);
+  await user.save();
+  res.status(201).json({
+      success: true,
       addresses: user.addresses,
   });
 }));
