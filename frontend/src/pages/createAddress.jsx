@@ -19,7 +19,7 @@ const CreateAddress = () => {
             address2,
             zipCode,
             addressType,
-            email: "gowrishvarma@gmail.com"
+            email: "bkuvbwskj@gmail.com"
         };
         try {
             const response = await axios.post(
