@@ -276,3 +276,14 @@ In this milestone, we will build a frontend profile page to display user data an
 - Add a section for addresses with an “Add Address” button, and display “No address found” if no address exists.
 
 This milestone enhances the user experience by providing a profile page to view and manage their information.
+
+### Milestone 21: Address Input Form  
+
+In this milestone, we will create a frontend form for users to input their address details.  
+
+#### Key Tasks:  
+- Design a form to collect country, city, address1, address2, zip code, and address type.  
+- Create a state to store the input address.  
+- Navigate to this form page when clicking "Add Address" on the profile page.  
+
+This milestone focuses on implementing an address form for better user data management.
