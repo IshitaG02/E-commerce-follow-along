@@ -333,3 +333,13 @@ Welcome to Milestone 24! In this milestone, we focused on creating the "Order Co
 ✅ Efficient endpoint design for placing orders.  
 ✅ Ensures proper data structure and storage.  
 ✅ Enhances understanding of MongoDB data handling and endpoint creation.  
+
+# Milestone 26 📝
+
+### Steps to Fetch User Orders
+1. Create an endpoint to receive the *user's email*.
+2. Retrieve the *user's _id* using the provided email.
+3. Fetch all orders linked to that *_id*.
+4. Respond with the user's order details.
+
+This endpoint will help you retrieve all orders for a specific user.
