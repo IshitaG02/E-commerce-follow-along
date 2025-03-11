@@ -309,3 +309,27 @@ In this milestone, we will create a select address page in the frontend and defi
 - Define a Mongoose schema for order details.  
 
 This milestone focuses on enabling address selection and order storage.
+
+### Milestone 24: Order Confirmation Page
+
+Welcome to Milestone 24! In this milestone, we focused on creating the "Order Confirmation" page, where we display the products being ordered, the selected delivery address, and the total price of the cart. This step is essential in the checkout process and helps users review their order before finalizing the purchase.
+
+# Milestone 25 - Order Placement API 📝
+
+## Steps to Implement
+
+1. *Create an Endpoint:*
+   - Develop an endpoint that accepts product details, user information, and address details.
+
+2. *Retrieve User ID:*
+   - Extract the user's email from the request data.
+   - Use this email to fetch the corresponding _id from the MongoDB users collection.
+
+3. *Store Order Details:*
+   - For each product, create a unique order entry with the same address.
+   - Use the existing Order schema to store these details in the MongoDB orders collection.
+
+### Key Notes
+✅ Efficient endpoint design for placing orders.  
+✅ Ensures proper data structure and storage.  
+✅ Enhances understanding of MongoDB data handling and endpoint creation.  
