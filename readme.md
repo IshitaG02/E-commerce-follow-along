@@ -343,3 +343,9 @@ Welcome to Milestone 24! In this milestone, we focused on creating the "Order Co
 4. Respond with the user's order details.
 
 This endpoint will help you retrieve all orders for a specific user.
+
+# Milestone 27: My Orders Page
+
+Welcome to Milestone 27! 
+
+In this milestone, we focused on creating the frontend page that displays all user orders.
