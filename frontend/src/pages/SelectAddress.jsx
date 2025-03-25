@@ -16,7 +16,7 @@ const SelectAddress = () => {
     useEffect(() => {
         const fetchAddresses = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/v2/user/addresses', {
+                const response = await axios.get('http://localhost:8006/api/v2/user/addresses', {
                     params: { email: userEmail },
                 });
                 if (response.status !== 200) {

@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
          try {
              setLoading(true);
              setError('');
-             const response = await axios.get('http://localhost:8000/api/v2/orders/myorders', {
+             const response = await axios.get('http://localhost:8006/api/v2/orders/myorders', {
                  params: { email: defaultEmail },
              });
              setOrders(response.data.orders);
@@ -27,7 +27,7 @@ import { useState, useEffect } from 'react';
      const cancelOrder = async (orderId) => {
          console.log("aa")
          try {
-             const response = await axios.patch(`http://localhost:8000/api/v2/orders/cancel-order/${orderId}`);
+             const response = await axios.patch(`http://localhost:8006/api/v2/orders/cancel-order/${orderId}`);
              // Update the order in local state: either remove or update its status.
              setOrders((prevOrders) =>
                  prevOrders.map((order) =>
